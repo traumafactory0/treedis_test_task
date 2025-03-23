@@ -1,9 +1,3 @@
-export interface ShowcaseEmbedWindow extends Window {
-  MP_SDK: {
-    connect: (iframe: HTMLIFrameElement, sdkKey: string, options?: string) => Promise<MatterportSDK>;
-  };
-}
-
 export interface MatterportSDK {
   Sweep: {
     getCurrent: () => Promise<Sweep>;
